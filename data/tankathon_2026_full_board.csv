@@ -1,0 +1,61 @@
+player_name,overall_pick,ncaa_stocks,ncaa_ast_tov_ratio,ncaa_per,ncaa_ts_pct,ncaa_bpm,ncaa_usg_pct,ncaa_class
+AJ Dybantsa,1,2.8,1.74,28.8,0.600,9.0,34.0,FR
+Darryn Peterson,2,5.2,1.51,26.3,0.578,8.5,33.7,FR
+Cam Boozer,3,4.7,2.01,34.7,0.653,11.5,30.0,FR
+Caleb Wilson,4,7.0,1.58,31.2,0.626,10.0,28.2,FR
+Darius Acuff Jr.,5,2.2,3.20,25.8,0.604,7.5,29.4,FR
+Keaton Wagler,6,1.8,1.40,23.5,0.590,5.8,25.0,FR
+Kingston Flemings,7,2.3,1.80,24.1,0.580,6.2,26.4,FR
+Mikel Brown Jr.,8,1.9,1.60,22.8,0.570,5.5,24.5,FR
+Nate Ament,9,2.5,1.20,22.0,0.565,5.2,23.0,FR
+Brayden Burries,10,2.1,1.30,21.5,0.585,5.0,22.5,FR
+Yaxel Lendeborg,11,6.5,2.16,26.1,0.646,9.5,20.5,SR
+Aday Mara,12,12.7,1.06,26.7,0.659,8.2,23.1,JR
+Karim Lopez,13,4.1,0.90,19.5,0.540,4.8,22.0,FR
+Labaron Philon Jr.,14,3.2,2.40,20.8,0.555,5.5,21.5,SO
+Hannes Steinbach,15,5.8,0.80,22.5,0.610,6.1,19.0,FR
+Jayden Quaintance,16,6.2,0.70,23.1,0.595,6.4,24.2,SO
+Bennett Stirtz,17,3.5,2.90,21.4,0.580,6.2,18.5,SR
+Cameron Carr,18,3.1,1.10,20.5,0.570,5.4,22.0,SO
+Chris Cenac Jr.,19,5.5,0.90,21.8,0.605,5.9,20.2,FR
+Dailyn Swain,20,4.5,1.40,19.2,0.545,4.2,19.5,JR
+Christian Anderson Jr.,21,1.8,2.60,20.1,0.575,5.1,23.0,SO
+Koa Peat,22,3.8,1.30,24.5,0.585,7.2,28.5,FR
+Isaiah Evans,23,2.5,1.20,18.8,0.550,4.0,24.0,SO
+Meleek Thomas,24,3.2,1.80,22.4,0.570,5.8,27.5,FR
+Alex Karaban,25,3.0,1.50,21.2,0.630,7.1,19.5,SR
+Zuby Ejiofor,26,7.5,0.60,20.4,0.590,5.3,17.2,SR
+Tarris Reed Jr.,27,10.4,1.32,29.3,0.614,8.8,26.2,SR
+Milan Momcilovic,28,1.5,1.10,18.5,0.580,4.5,21.0,JR
+Maliq Brown,29,8.5,1.90,24.5,0.640,9.2,18.5,SR
+Josh Jefferson,30,5.2,1.00,19.8,0.585,5.0,20.0,SR
+Dash Daniels,31,2.8,2.10,17.5,0.530,3.8,22.5,FR
+Luigi Suigo,32,9.1,0.50,18.2,0.620,4.1,16.5,FR
+Tounde Yessoufou,33,4.2,1.10,21.5,0.565,5.5,25.4,FR
+John Blackwell,34,2.5,1.70,19.1,0.575,4.9,22.2,JR
+Ebuka Okorie,35,3.1,2.30,17.8,0.525,3.9,21.0,FR
+Juke Harris,36,2.2,1.20,19.5,0.560,4.4,24.5,SO
+Malachi Moreno,37,8.2,0.80,20.1,0.615,5.1,17.5,FR
+Tamin Lipsey,38,4.5,3.10,21.8,0.560,7.8,19.0,SR
+Braden Smith,39,3.2,3.50,20.5,0.590,7.5,18.5,SR
+Flory Bidunga,40,7.8,0.70,22.1,0.635,6.5,18.0,SO
+Otega Oweh,41,4.1,1.40,18.4,0.555,4.3,20.2,SR
+Darrion Williams,42,3.8,1.90,19.2,0.570,5.2,18.2,SR
+Rueben Chinyelu,43,11.5,0.40,18.8,0.625,4.8,15.5,JR
+Baba Miller,44,4.5,1.60,17.2,0.540,4.1,19.0,SR
+Jaden Bradley,45,2.8,2.80,18.1,0.565,5.1,18.5,SR
+Milos Uzan,46,2.5,3.20,17.4,0.530,4.5,17.0,SR
+Bruce Thornton,47,2.2,3.00,19.5,0.575,5.8,22.0,SR
+Kylan Boswell,48,2.6,2.70,18.5,0.560,5.2,20.0,SR
+Trevon Brazile,49,6.5,0.80,17.8,0.595,4.2,16.5,SR
+Nate Bittle,50,8.2,0.70,19.2,0.605,4.9,18.0,SR
+Emanuel Sharp,51,2.8,1.40,17.2,0.585,4.0,21.5,SR
+Tyler Tanner,52,2.5,2.10,16.8,0.520,3.5,20.0,FR
+Rafael Castro,53,7.1,0.50,16.5,0.590,3.2,15.2,SR
+Ognjen Srzentic,54,1.8,2.30,15.8,0.510,2.9,19.5,FR
+AJ Storr,55,1.5,0.90,17.5,0.550,3.1,25.0,SR
+Mark Mitchell,56,4.2,1.10,18.1,0.570,4.4,19.5,SR
+Matt Able,57,2.2,1.30,16.5,0.545,3.2,20.5,FR
+Shelton Henderson,58,3.5,1.50,20.2,0.560,5.1,26.0,FR
+Sadiq White,59,5.2,0.80,19.5,0.580,4.8,21.0,FR
+Jasper Johnson,60,2.1,1.90,21.8,0.575,5.9,28.5,FR
