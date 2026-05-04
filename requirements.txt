@@ -1,0 +1,14 @@
+# Data Manipulation & Machine Learning
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+xgboost
+joblib
+
+# Web App Dashboard
+streamlit
+
+# Web Scraping
+requests
+beautifulsoup4
