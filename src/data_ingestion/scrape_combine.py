@@ -1,3 +1,11 @@
+"""
+NBA Draft Value Classifier - Combine Scraper
+============================================
+Fetches historical NBA Combine physicals via the nba_api. 
+Automatically merges new measurements (Height, Ape Index, Max Vertical) 
+into the live Streamlit 2026 Draft Board.
+"""
+
 import pandas as pd
 import time
 from nba_api.stats.endpoints import draftcombinestats
@@ -27,7 +35,8 @@ def convert_to_inches(measurement):
 def fetch_combine_data():
     all_seasons_data = []
     
-    for year in range(2001, 2026): 
+    # THE FIX: Increased range to 2027 so Python successfully loops through 2026
+    for year in range(2001, 2027): 
         season = f"{year}-{str(year+1)[-2:]}"
         print(f"📡 Fetching {season} Combine Data...")
         try:
@@ -69,6 +78,44 @@ def fetch_combine_data():
     output_path = 'data/historical_combine.csv'
     final_df.to_csv(output_path, index=False)
     print(f"✅ Successfully extracted {len(final_df)} player measurements to {output_path}")
+
+    # --- NEW SECTION: AUTO-UPDATE THE STREAMLIT 2026 DRAFT BOARD ---
+    board_path = 'data/tankathon_2026_full_board.csv'
+    if os.path.exists(board_path):
+        print("\n🔄 Merging new 2026 combine data into the Streamlit Draft Board...")
+        board_df = pd.read_csv(board_path)
+        
+        # Extract just the 2026 class from the combine scrape
+        combine_2026 = final_df[final_df['season'] == 2026].copy()
+        
+        # Calculate Ape Index safely
+        combine_2026['new_ape_index'] = combine_2026['wingspan'] - combine_2026['height_no_shoes']
+        
+        # Keep only the columns we need to update
+        combine_updates = combine_2026[['player_name', 'height_no_shoes', 'new_ape_index', 'max_vertical']].copy()
+        combine_updates.rename(columns={
+            'height_no_shoes': 'new_height',
+            'max_vertical': 'new_vertical'
+        }, inplace=True)
+        
+        # Merge with the draft board
+        merged = pd.merge(board_df, combine_updates, on='player_name', how='left')
+        
+        # Initialize default columns if they don't exist
+        if 'height_in' not in merged.columns: merged['height_in'] = 78.0
+        if 'ape_index' not in merged.columns: merged['ape_index'] = 3.5
+        if 'vertical_in' not in merged.columns: merged['vertical_in'] = 32.0
+        
+        # Overwrite estimations with official Combine physicals (fallback to old data if player skipped combine)
+        merged['height_in'] = merged['new_height'].fillna(merged['height_in'])
+        merged['ape_index'] = merged['new_ape_index'].fillna(merged['ape_index'])
+        merged['vertical_in'] = merged['new_vertical'].fillna(merged['vertical_in'])
+        
+        # Clean up temporary columns
+        merged.drop(columns=['new_height', 'new_ape_index', 'new_vertical'], inplace=True)
+        
+        merged.to_csv(board_path, index=False)
+        print(f"💎 Successfully updated {board_path} with official physicals!")
 
 if __name__ == "__main__":
     fetch_combine_data()
