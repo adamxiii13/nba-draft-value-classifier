@@ -2,9 +2,11 @@
 pandas
 numpy
 scikit-learn
-imbalanced-learn
 xgboost
+streamlit
 joblib
+nba_api
+shap
 
 # Web App Dashboard
 streamlit
