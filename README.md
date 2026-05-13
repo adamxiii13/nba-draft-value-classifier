@@ -29,5 +29,5 @@ Because the pre-trained models and master datasets are too large for standard Gi
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/YOUR_USERNAME/nba-draft-value-classifier.git](https://github.com/YOUR_USERNAME/nba-draft-value-classifier.git)
+git clone [https://github.com/adamxiii13/nba-draft-value-classifier.git](https://github.com/adamxiii13/nba-draft-value-classifier.git)
 cd nba-draft-value-classifier
