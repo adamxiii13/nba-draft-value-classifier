@@ -19,7 +19,7 @@ The model evaluates a prospect's pure mathematical profile and projects them int
 * **Feature Engineering:** Accounts for the "Unranked Penalty" (non-Top 100 high school recruits) and imputes exact Draft Age to punish older prospects with inflated counting stats.
 * **Streamlit Dashboard:** A dynamic UI allowing scouts to tweak physicals, college stats, and draft slots to run real-time "What-If" scenarios.
 * **Draft Slot Pressure Relief:** A custom tool to remove the mathematical burden of being a Top-3 pick, allowing the AI to evaluate pure basketball talent in a vacuum.
-* **SHAP AI Explainer:** (explain_player.py) A diagnostic script that cracks open the XGBoost black box to show exactly *why* a player received their grade (e.g., showing if their assist-to-turnover ratio "Pushed Up" or "Pulled Down" their projection).
+* **SHAP AI Explainer:** A diagnostic script that cracks open the XGBoost black box to show exactly *why* a player received their grade (e.g., showing if their assist-to-turnover ratio "Pushed Up" or "Pulled Down" their projection).
 
 ---
 
